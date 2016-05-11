@@ -36,7 +36,7 @@ char *answer(const char *x, const char *y)
 			return "Sem ganhador\n";
 		
 		if (strcmp(x,papel)==0)
-			return "Ambos venceram";
+			return "Ambos venceram\n";
 			
 	}
 	else					//caso string diferentes

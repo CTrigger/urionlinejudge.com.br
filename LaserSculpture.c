@@ -40,14 +40,14 @@ int main()
 		for(x = 0 ;x<comprimento;x++)
 			scanf("%d", &build[x]);
 		/*--------------------*/
-		qsort (build,comprimento,sizeof(int),quickSort);
+		//qsort (build,comprimento,sizeof(int),quickSort);
 		
 		laserON = altura - build[0];
 		
 		//for(x=0;x<comprimento;x++)
 			//printf("%d ",build[x]);
 		//puts("");
-		
+		/*
 		for(x = 1 , aux = build [0]; x < comprimento ; x++)
 		{
 			if(aux == build[x] && build[x]< altura)
@@ -55,13 +55,13 @@ int main()
 			if(aux != build[x])
 				aux = build[x];
 			
-		}
+		}*/
 		//printf("cont=%d\nlaserON=%d\n",cont,laserON);
-		laserON = laserON+cont;
+		//laserON = laserON+cont;
 		
 		/*desenha o bloco inteiro*/
 		/*avalia condicao de laser ligado*/
-		/*
+		
 		for(y= 0;y < altura;y++,aux=0)
 			for(x = 0 ;x < comprimento;x++)
 			{
@@ -79,7 +79,7 @@ int main()
 					aux = 1;		//		
 				}
 			}
-			*/
+			
 		/*conta o numero de vezes que o laser liga*/
 		/*
 		//===============================================

@@ -3,7 +3,7 @@
 	Copyright: Ricardo Kim
 	Author: Ricardo Kim
 	Date: 12/05/16 00:36
-	Description: https://w...content-available-to-author-only...m.br/judge/pt/problems/view/1107
+	Description:https://www.urionlinejudge.com.br/judge/pt/problems/view/1107
  
 	Obs: será necessário ordenar em decrescente 
 	((somar para cada altura igual menor que a altura) = +1)+(altura-menor nível)

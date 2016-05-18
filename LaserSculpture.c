@@ -17,22 +17,19 @@ int main()
 	
 	while(comprimento!=0 && altura !=0)
 	{
-		int bloco[comprimento][altura]; //area do bloco inteiro
-		int build[comprimento];			//area do bloco a ser preservada
-		int x,y,laserON,aux,cont;		//variaveis de suporte
+		int build;			//area a ser preservada
+		int x,y,laserON,aux;		//variaveis de suporte
 
 		laserON = 0;
 		aux = altura;
-		cont = 0;
 
-
-		for(x = 0 ; x<comprimento ; x++)
+		for(x = 0 ; x < comprimento ; x++)
 		{
-			scanf("%d", &build[x]);
-			if(aux>build[x])
-				laserON = laserON+(aux - build[x]);
+			scanf("%d", &build);
+			if(aux > build)
+				laserON += (aux - build);
 			
-			aux = build[x];
+			aux = build;
 
 		}
 

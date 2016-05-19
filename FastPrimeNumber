@@ -1,0 +1,45 @@
+/*
+	Name: Ricardo Kim
+	Copyright: Ricardo Kim
+	Author: Ricardo Kim
+	Date: 18/05/16 21:34
+	Description: https://www.urionlinejudge.com.br/judge/en/problems/view/1221
+*/
+
+#include<stdio.h>
+long long entrada,j=1 ,divisor = 1,checker=2,resto,verdade = 1;
+void primos()
+{
+    while (verdade < 3 && j < checker)
+    {
+        resto = entrada%j;
+        checker = entrada/j;
+        j++;
+        
+        if(resto == 0)
+            verdade ++;
+            
+    }
+        if(verdade == 2)
+        {
+            puts("Prime");
+        }else{
+            puts("Not Prime");
+        }
+}
+
+int main ()
+{
+    int i;
+    scanf("%d",&i);
+    for( ; i > 0 ; i--)
+    {
+        scanf("%lld", &entrada);
+        primos();
+        j=1;
+        divisor = 1;
+        checker=2;
+        verdade = 1;
+    }
+    return 0;
+}
